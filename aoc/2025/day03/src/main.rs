@@ -1,6 +1,7 @@
 use std::fs::read_to_string;
 
 fn main() {
+    println!("------------ 2025 Day 3 ------------");
     let mut total_output: u64 = 0;
     let mut total_output_2: u64 = 0;
     let input = read_to_string("input.txt").expect("Failed to read input file");

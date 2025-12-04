@@ -1,6 +1,7 @@
 use std::fs::read_to_string;
 
 fn main() {
+    println!("------------ 2025 Day 2 ------------");
     let mut invalid_ids_sum: u64 = 0;
     let mut invalid_ids_sum_2: u64 = 0;
 

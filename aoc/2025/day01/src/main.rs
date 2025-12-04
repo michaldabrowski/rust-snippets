@@ -1,6 +1,7 @@
 use std::fs::read_to_string;
 
 fn main() {
+    println!("------------ 2025 Day 1 ------------");
     let mut current_dial: u32 = 50;
     let mut password1a: u32 = 0;
     let mut password1b: u32 = 0;

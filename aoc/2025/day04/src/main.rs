@@ -12,11 +12,11 @@ const DIRECTIONS: [(isize, isize); 8] = [
 ];
 
 fn main() {
+    println!("------------ 2025 Day 4 ------------");
     let input = read_to_string("input.txt").expect("Failed to read input file");
     let mut grid: Vec<Vec<char>> = input.lines().map(|l| l.chars().collect()).collect();
 
     let grid_size = (grid.len(), grid[0].len());
-    println!("Grid size: {} rows x {} cols", grid_size.0, grid_size.1);
 
     // part 1
     let mut result = 0;
