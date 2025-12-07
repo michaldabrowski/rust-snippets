@@ -1,4 +1,4 @@
-use std::{fs::read_to_string, iter::Rev};
+use std::fs::read_to_string;
 
 fn main() {
     println!("------------ 2025 Day 6 ------------");
@@ -11,7 +11,7 @@ fn main() {
 
     // part 1
     input_grid.push(vec![String::new(); input_grid[0].len()]); // add empty row for operation results
-    let mut input_grid_size = (input_grid.len(), input_grid[0].len());
+    let input_grid_size = (input_grid.len(), input_grid[0].len());
 
     for col in 0..input_grid_size.1 {
         let operation = input_grid[input_grid_size.0 - 2][col].trim();
