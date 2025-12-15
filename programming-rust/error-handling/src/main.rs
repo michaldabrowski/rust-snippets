@@ -4,10 +4,13 @@ fn main() {
         line: 1,
         column: 1,
     };
-    println!("Error: {:?}", error);
+    println!("{}", error);
+    eprintln!("{}", error);
 }
 
-#[derive(Debug, Clone)]
+use thiserror::Error;
+#[derive(Error, Debug)]
+#[error("JSON Error at line {line}, column {column}: {message}")]
 pub struct JsonError {
     pub message: String,
     pub line: usize,
